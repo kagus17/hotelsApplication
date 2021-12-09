@@ -1,27 +1,27 @@
 package pl.karol.hotelsapplication.remote.rest.dto.request;
 
 import pl.karol.hotelsapplication.remote.rest.dto.common.PersonDto;
-import pl.karol.hotelsapplication.remote.rest.dto.common.ReservationDto;
+import pl.karol.hotelsapplication.remote.rest.dto.common.RoomReservationDto;
 
 import java.util.List;
 
-public class AddReservationDto {
-    private List<ReservationDto> hotels;
+public class ReservationDto {
+    private List<RoomReservationDto> hotels;
     private PersonDto person;
 
-    public AddReservationDto() {
+    public ReservationDto() {
     }
 
-    public AddReservationDto(List<ReservationDto> hotels, PersonDto person) {
+    public ReservationDto(List<RoomReservationDto> hotels, PersonDto person) {
         this.hotels = hotels;
         this.person = person;
     }
 
-    public List<ReservationDto> getHotels() {
+    public List<RoomReservationDto> getHotels() {
         return hotels;
     }
 
-    public void setHotels(List<ReservationDto> hotels) {
+    public void setHotels(List<RoomReservationDto> hotels) {
         this.hotels = hotels;
     }
 

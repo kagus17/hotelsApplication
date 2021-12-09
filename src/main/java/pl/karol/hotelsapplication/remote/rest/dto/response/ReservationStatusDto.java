@@ -1,7 +1,7 @@
 package pl.karol.hotelsapplication.remote.rest.dto.response;
 
 import pl.karol.hotelsapplication.domain.model.StatusType;
-import pl.karol.hotelsapplication.remote.rest.dto.common.ReservationDto;
+import pl.karol.hotelsapplication.remote.rest.dto.common.RoomReservationDto;
 import pl.karol.hotelsapplication.remote.rest.dto.common.PersonDto;
 
 import java.util.List;
@@ -9,13 +9,13 @@ import java.util.List;
 public class ReservationStatusDto {
     private Integer id;
     private StatusType status;
-    private List<ReservationDto> rooms;
+    private List<RoomReservationDto> rooms;
     private PersonDto person;
 
     public ReservationStatusDto() {
     }
 
-    public ReservationStatusDto(Integer id, StatusType status, List<ReservationDto> rooms, PersonDto person) {
+    public ReservationStatusDto(Integer id, StatusType status, List<RoomReservationDto> rooms, PersonDto person) {
         this.id = id;
         this.status = status;
         this.rooms = rooms;
@@ -38,11 +38,11 @@ public class ReservationStatusDto {
         this.status = status;
     }
 
-    public List<ReservationDto> getRooms() {
+    public List<RoomReservationDto> getRooms() {
         return rooms;
     }
 
-    public void setRooms(List<ReservationDto> rooms) {
+    public void setRooms(List<RoomReservationDto> rooms) {
         this.rooms = rooms;
     }
 

@@ -1,14 +1,14 @@
 package pl.karol.hotelsapplication.remote.rest.dto.common;
 
-public class ReservationDto {
+public class RoomReservationDto {
     private Integer id;
     private Integer roomId;
     private Integer days;
 
-    public ReservationDto() {
+    public RoomReservationDto() {
     }
 
-    public ReservationDto(Integer id, Integer roomId, Integer days) {
+    public RoomReservationDto(Integer id, Integer roomId, Integer days) {
         this.id = id;
         this.roomId = roomId;
         this.days = days;
